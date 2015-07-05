@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector"
+                android:elevation="1dp">
+
+    <View
+        android:id="@+id/list_item_indicator_line"
+        android:layout_alignParentLeft="true"
+        android:background="@color/ColorPrimary"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/topll"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/list_item_indicator_line"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/list_item_time_tv"
+                android:text="Pick Up:"
+                android:layout_marginTop="-2dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/pickup_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="2 - 4 PM"
+                android:textColor="#CC000000"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccbcb"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:text="Pickup Address:"
+                android:layout_marginTop="-2dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/pickup_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="123 Sample Street"
+                android:textColor="#CC000000"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccbcb"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center|bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8">
+
+            <TextView
+                android:text="Picked Up?"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/pickup_checkbox"
+                android:layout_marginLeft="10dp"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/topll"
+        android:background="#cccbcb"/>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/list_item_indicator_line"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/dividerView"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="Drop Off:"
+                android:layout_marginTop="-2dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dropoff_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="4 - 6 PM"
+                android:textColor="#CC000000"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccbcb"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <TextView
+                android:text="Dropoff Address:"
+                android:layout_marginTop="-2dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dropoff_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="321 Example Road"
+                android:textColor="#CC000000"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_margin="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cccbcb"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8">
+
+            <TextView
+                android:text="Wage:"
+                android:layout_marginTop="-2dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dropoff_wage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="$3"
+                android:textColor="#CC000000"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

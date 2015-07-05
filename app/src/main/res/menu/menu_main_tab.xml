@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainTabActivity">
+    <item
+        android:id="@+id/log_out"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/testid"
+        android:title="Sort  "
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_sort_distance"
+                android:title="Sort by Distance"/>
+            <item
+                android:id="@+id/menu_sort_time"
+                android:title="Sort by Time"/>
+            <item
+                android:id="@+id/menu_sort_wage"
+                android:title="Sort by Wage"/>
+        </menu>
+    </item>
+
+</menu>

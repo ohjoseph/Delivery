@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DeliveryApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="sort_items">
+        <item>Sort by Distance</item>
+        <item>Sort by Time</item>
+        <item>Sort by Wage</item>
+    </string-array>
+
+    <string name="login_remember">Remember Me</string>
+
+</resources>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:elevation="2dp">
+
+    <RelativeLayout
+        android:id="@+id/button_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+
+        <Button
+            android:id="@+id/claim_button"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            android:background="@color/ColorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Claim!"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/button_view"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="16sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pickup"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Distance away:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/pickup_distance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="20 mi"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Address:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/pickup_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="1234 Sample St"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Pickup Time:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/pickup_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="2 - 4 PM"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Name:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/pickup_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Mrs. Sample Person"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Phone:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/pickup_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="123-456-7890"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="16sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Drop Off"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Distance from:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/dropoff_distance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="20 mi"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Address:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/dropoff_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="1234 Sample St"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Dropoff Time:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/dropoff_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="4 - 7 PM"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Name:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/dropoff_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Mrs. Sample Person"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="Phone:"
+                    android:textColor="#80000000"/>
+
+                <TextView
+                    android:id="@+id/dropoff_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="123-456-7890"
+                    android:textColor="#CC000000"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

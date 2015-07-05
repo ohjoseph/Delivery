@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="15dp"
+              android:orientation="horizontal"
+              android:background="@drawable/selector"
+              android:elevation="1dp">
+
+    <View
+        android:id="@+id/priority_indicator"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:background="@color/ColorPrimary"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Distance:"
+            android:layout_marginTop="-2dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/list_item_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="3.6 km"
+            android:textColor="#CC000000"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#cccbcb"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Pick Up:"
+            android:layout_marginTop="-2dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/list_item_pickup_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="3 - 4 PM"
+            android:textColor="#CC000000"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#cccbcb"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Wage:"
+                android:layout_marginTop="-2dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/list_item_bounty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="$2"
+                android:textColor="#CC000000"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="15dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/right_arrow">
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
